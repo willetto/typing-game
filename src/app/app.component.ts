@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { faker } from '@faker-js/faker';
+import { loremIpsum } from 'lorem-ipsum';
+loremIpsum({
+  count: 1, // Number of "words", "sentences", or "paragraphs"
+});
 
 @Component({
   selector: 'app-root',
@@ -8,7 +11,12 @@ import { faker } from '@faker-js/faker';
 })
 export class AppComponent {
   generateRandomText() {
-    return faker.lorem.sentence(4);
+    return loremIpsum({
+      count: 1,
+      units: 'sentences',
+      sentenceLowerBound: 3,
+      sentenceUpperBound: 5,
+    });
   }
   randomText = this.generateRandomText();
 
