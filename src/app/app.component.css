@@ -1,0 +1,25 @@
+.container {
+  background-color: var(--gray-3);
+  width: max-content;
+  display: grid;
+  justify-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-3);
+}
+.container > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.typing-input {
+  width: 100%;
+  text-align: center;
+}
+.match {
+  color: var(--green-7);
+}
+.wrong {
+  color: var(--red-7);
+}
+.pending {
+  color: var(--grey-7);
+}

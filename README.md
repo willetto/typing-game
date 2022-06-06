@@ -1,27 +1,13 @@
-# TypingGame
+# Typing Game Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+Project from [Modern Angular Bootcamp on Udemy](https://www.udemy.com/course/the-modern-angular-bootcamp/).
 
-## Development server
+### What I Changed/Added
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Instead of using Bulma, I used Open Props as my CSS framework. I wanted practice using a different framework, and wanted it to look unique.
+- I added a `Reset` button. Right now it just refreshes the page, but I want to make it reset the state of the page with a new random string.
 
-## Code scaffolding
+### What I Learned
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- To get the event from the DOM in Angular, you have to pass in `$event` to the function, and define the target `const target = event.target as HTMLInputElement;` so you can access the methods.
+- How to use `*ngFor` to loop over an array and generate elements without hard coding.
